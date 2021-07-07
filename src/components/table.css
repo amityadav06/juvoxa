@@ -61,7 +61,6 @@
   display: inline-block;
   padding: 7px 12px;
   color: #fff;
-  /* color: #2196f3; */
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
@@ -70,17 +69,17 @@
   cursor: pointer;
   transition: 0.2s;
   box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-  background: #de6161; /* fallback for old browsers */
+  background: #de6161; 
   background: -webkit-linear-gradient(
     to right,
     #2657eb,
     #de6161
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #2657eb,
     #de6161
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
 }
 
 .resize-btn:hover {
@@ -163,19 +162,7 @@ input {
 
   td {
     text-align: right;
-    /* padding-left: 30px; */
     position: relative;
   }
 
-  /* td::before{
-    float: left;
-    margin-right: 3rem;
-    font-weight: bold;
-  }
-
-  .table tbody tr td{
-    text-align: right;
-    padding-left: 10%;
-    position: relative;
-  } */
 }
