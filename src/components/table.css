@@ -1,0 +1,181 @@
+.table-container {
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.table td,
+.table th {
+  border: 1px solid #282828;
+  padding: 8px;
+}
+
+.table tr {
+  background-color: #181818;
+  color: #b3b3b3;
+}
+.table tr:hover {
+  background-color: #404040;
+  color: #1db954;
+}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #ff0766;
+  color: #fff;
+}
+
+.resizer {
+  display: inline-block;
+  background: #f51142ec;
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(50%);
+  z-index: 1;
+  touch-action: none;
+}
+
+.isResizing {
+  background: red;
+}
+
+.btn-container {
+  margin-top: 2rem;
+  color: #fff;
+}
+.resize-btn,
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 7px 12px;
+  color: #fff;
+  /* color: #2196f3; */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  background: #de6161; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2657eb,
+    #de6161
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2657eb,
+    #de6161
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.resize-btn:hover {
+  background: none;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 1s;
+}
+.btn {
+  color: #fff;
+  margin: 1rem;
+  cursor: pointer;
+  font-weight: 900;
+}
+.order {
+  margin-left: 8px;
+}
+input {
+  background: transparent;
+  color: #fff;
+  border-style: none;
+  background: transparent;
+  padding: 7px 12px;
+}
+
+@media (max-width: 768px) {
+  .table thead {
+    display: none;
+  }
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .table tr {
+    margin-bottom: 20px;
+  }
+  td:nth-child(1)::before {
+    content: "Name";
+    float: left;
+    margin-right: 3rem;
+    font-weight: bold;
+  }
+
+  td:nth-child(2)::before {
+    content: "Ticket Ref";
+    float: left;
+    margin-right: 3rem;
+    font-weight: bold;
+  }
+
+  td:nth-child(3)::before {
+    content: "Ticket Date";
+    float: left;
+    margin-right: 3rem;
+    font-weight: bold;
+  }
+
+  td:nth-child(4)::before {
+    content: "QTY";
+    float: left;
+    margin-right: 3rem;
+    font-weight: bold;
+  }
+
+  td:nth-child(5)::before {
+    content: "CCY";
+    float: left;
+    margin-right: 3rem;
+    font-weight: bold;
+  }
+  td:nth-child(6)::before {
+    content: "Settlement Amount";
+    float: left;
+    margin-right: 9rem;
+    font-weight: bold;
+  }
+
+  td {
+    text-align: right;
+    /* padding-left: 30px; */
+    position: relative;
+  }
+
+  /* td::before{
+    float: left;
+    margin-right: 3rem;
+    font-weight: bold;
+  }
+
+  .table tbody tr td{
+    text-align: right;
+    padding-left: 10%;
+    position: relative;
+  } */
+}
